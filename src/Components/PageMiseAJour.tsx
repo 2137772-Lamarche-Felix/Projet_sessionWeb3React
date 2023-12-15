@@ -35,7 +35,7 @@ const PageMiseAJour = () => {
   const [estFavoris, setEstFavoris] = useState(false);
   let {id} = useParams();
   useEffect(() => {
-      axios.get('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/'+id).then((response) => {
+      axios.get('https://api-musik.netlify.app/musiques/'+id).then((response) => {
         setMusiqueAModifier(response.data.musique)
         console.log(id)
       })
@@ -90,7 +90,7 @@ const PageMiseAJour = () => {
         alert('Veuillez remplir tous les champs');
       }
       else {
-        axios.put('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques', {
+        axios.put('https://api-musik.netlify.app/musiques', {
           "musique": {
           "_id": id,
           "titre": titre,

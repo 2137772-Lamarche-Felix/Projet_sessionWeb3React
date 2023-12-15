@@ -41,7 +41,7 @@ function MusiqueCarte(props: IMusiqueCarteProps) {
   const  supprimer = async () => {
     await axios({
       method: 'delete',
-      url: 'https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/' + props.musique._id,
+      url: 'https://api-musik.netlify.app/musiques/' + props.musique._id,
     });
     console.log("Supprimer")
     handleClose()

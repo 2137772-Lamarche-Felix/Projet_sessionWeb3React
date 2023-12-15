@@ -56,7 +56,7 @@ function MusiqueDetails(){
   const [musiqueATrouver, setMusiqueATrouver] = React.useState<IMusiqueDetailsProps>();
   let {id} = useParams();
   useEffect(() => {
-      axios.get('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/'+id).then((response) => {
+      axios.get('https://api-musik.netlify.app/musiques/'+id).then((response) => {
       setMusiqueATrouver(response.data.musique)
       
       })

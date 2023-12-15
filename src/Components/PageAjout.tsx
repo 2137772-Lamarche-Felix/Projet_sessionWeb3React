@@ -55,7 +55,7 @@ const PageAjout = () => {
       }
       else if(enCollaboration == true)
       {
-        axios.post('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques', {
+        axios.post('https://api-musik.netlify.app/musiques', {
           "musique": {
           "titre": titre,
           "artiste": {
@@ -104,7 +104,7 @@ const PageAjout = () => {
         }});
       }
       else {
-        axios.post('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques', {
+        axios.post('https://api-musik.netlify.app/musiques', {
           "musique": {
           "titre": titre,
           "artiste": {
