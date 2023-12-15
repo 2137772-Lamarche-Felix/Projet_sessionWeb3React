@@ -1,0 +1,39 @@
+/* CSS Généré par OpenAI. (2023). ChatGPT (version 15 mars 2023) [Modèle massif de langage]. https://chat.openai.com/chat  */
+.music-form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+/* Fin du code généré */
