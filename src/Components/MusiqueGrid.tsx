@@ -32,7 +32,7 @@ function MusiqueGrid(props: IMusiqueGrilleProps) {
         }
         else{
             setEntrainRecherche(true)
-        axios.get('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/titre/'+recherche).then((response) => {
+        axios.get('https://api-musik.netlify.app/musiques/titre/'+recherche).then((response) => {
         setMusiquesRecherche(response.data.musique)
             })
         }
@@ -44,7 +44,7 @@ function MusiqueGrid(props: IMusiqueGrilleProps) {
         }
         else{
             setRechercheMoyenneBool(true)
-        axios.get('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/moyenne/'+recherche).then((response) => {
+        axios.get('https://api-musik.netlify.app/musiques/moyenne/'+recherche).then((response) => {
             setRechercheMoyenne(response.data.NombreMoyen)
             })
         }
@@ -56,7 +56,7 @@ function MusiqueGrid(props: IMusiqueGrilleProps) {
         }
         else{
             setRechercheEcouteTotalBool(true)
-        axios.get('https://main--fantastic-sherbet-ad5c6e.netlify.app/musiques/total/'+recherche).then((response) => {
+        axios.get('https://api-musik.netlify.app/musiques/total/'+recherche).then((response) => {
             setRechercheEcouteTotal(response.data.NombreTotale)
             })
         }
