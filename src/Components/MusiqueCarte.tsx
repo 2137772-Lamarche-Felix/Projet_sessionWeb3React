@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 export interface IMusiqueCarteProps {
     musique: IMusiqueDetailsProps;
 }
@@ -79,7 +80,7 @@ function MusiqueCarte(props: IMusiqueCarteProps) {
           {props.musique.artiste.nomArtiste}
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          {props.musique.nombreDecoute} écoutes
+          <FormattedMessage id="ecoutes">{txt => <p>{props.musique.nombreDecoute}  {txt}</p>}</FormattedMessage>
         </Typography>
       </CardContent>
       <DeleteIcon onClick={handleClickOuvert} />
