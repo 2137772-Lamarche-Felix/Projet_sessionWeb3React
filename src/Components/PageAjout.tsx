@@ -53,6 +53,10 @@ const PageAjout = () => {
       if (verifieState == true) {
         alert('Veuillez remplir tous les champs');
       }
+      else if(nombreAnneeCarriere < 0 || artistesEnCollaborationNombreAnneeCarriere < 0 || duree < 0 || nombreDecoute < 0 || evaluations < 0)
+      {
+        alert('Veuillez remplir tous les champs avec des valeurs positives');
+      }
       else if(enCollaboration == true)
       {
         axios.post('https://api-musik.netlify.app/musiques', {
